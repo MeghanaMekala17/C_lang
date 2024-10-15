@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a[15]={15,12,3,1,4,5,7,6,8,10,11,2,14,13};
+    int sum =(15*16)/2;
+    int t;
+    for(int i=0;i<14;i++)
+    {
+        t=t+a[i];
+    }
+    printf("the missing number is :%d",sum-t);
+    
+}
