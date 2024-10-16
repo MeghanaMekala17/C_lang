@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+void main()
+{
+    int a[10][10];
+    int b,i;
+    printf("enter no.of words");
+    scanf("%d",&b);
+    printf("enter the names");
+    for(i=0;i<b;i++)
+    {
+        scanf("%s",a[i]);
+        //gets(a[i]);
+    }
+    printf("the names are:");
+    for(i=0;i<b;i++)
+    {
+        printf("NO %d . %s",i+1,a[i]);
+    }
+}
