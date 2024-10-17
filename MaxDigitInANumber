@@ -1,0 +1,30 @@
+#include<stdio.h>
+int conv(int a);
+int max(int a,int array[10]);
+void main()
+{
+    int a;
+    printf("Enter no:");
+    scanf("%d",&a);
+    printf("maximum digit in no:%d",conv(a));
+    
+}
+int conv(int a) 
+{
+    int array[10];
+    int l= 0;
+    while (a > 0) 
+    {
+        array[l] = a % 10;
+        a = a / 10;
+        l++;
+    }
+
+    return max(l,array);
+}
+int max(int a,int array[10])
+{
+    for(int i=0;i<a;i++)
+    array[0]=array[0]>array[i]?array[0]:array[i];
+    return array[0];
+}
