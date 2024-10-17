@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int hashPattern(int n) {
+    for (int i = n; i >= 1; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+int starPattern(int n) {
+    for (int i = n; i >= 1; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+int main()
+{
+    int r;
+    char d;
+    printf("Which pattern do you want to print (# or *)? ");
+    scanf(" %c", &d);
+    if (d == '#')
+    {
+        printf("Enter number of rows: ");
+        scanf("%d", &r);
+        hashPattern(r);
+    }
+    else if (d == '*')
+    {
+        printf("Enter number of rows: ");
+        scanf("%d", &r);
+        starPattern(r);
+    }
+    else
+    {
+        printf("Invalid pattern");
+    }
+    return 0;
+}
