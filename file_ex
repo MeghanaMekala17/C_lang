@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+FILE *ptr =fopen("D:\TRAINING_ECET\18-10-2024(pointers).txt","r");
+if(ptr==NULL)
+
+    printf("nothing in it");
+fclose(ptr);
+}
